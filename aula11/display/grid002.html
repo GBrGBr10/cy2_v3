@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid002</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            border: 5px solid cyan;
+            display: grid;
+            grid-template-areas:
+            "i1 i1"
+            "i2 i3"
+            "i4 i4" 
+            ;
+            grid-template-rows: 200px 1fr 300px;
+            grid-template-columns: 1fr 100px;
+        }
+        .item-1{
+            background-color: red;
+            grid-area: i1;
+            
+        }
+        .item-2{
+            grid-area: i2;
+            background-color: aqua;
+            
+        }
+        .item-3{
+            grid-area: i3;
+            background-color: yellow;
+           
+        }
+        .item-4{
+            grid-area: i4;
+            background-color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">Item 1</div>
+        <div class="item item-2">Item 2</div>
+        <div class="item item-3">Item 3</div>
+        <div class="item item-4">Item 4</div>
+    </div>
+</body>
+</html>

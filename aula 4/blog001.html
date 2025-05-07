@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger News</title>
+    <style>
+        header{
+            background-color:cornflowerblue;
+            color: black;
+            text-align: center;
+            padding: 50px;
+        }
+        nav{
+            background-color: black;
+            color: white;
+            padding: 30px;
+        }
+        nav a{
+            color:white;
+        }
+      svg{
+        border: 1px solid black;
+        margin: auto;
+        display: block;
+      }
+
+      article{
+        border: 1px solid black;
+        width: 600px;
+        margin: auto;
+        background-color: aquamarine;
+      }
+
+      section{
+        margin: auto;
+      }
+      video{
+        width: 600px;
+        height: 400px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blogger News</h1>
+        <p>Você encontrará informações e notícias sobre a mídia.</p>
+    </header>
+
+    <nav>
+        <a href="blog001.html">Home</a>
+        <a href="../aula 3/link.html">Notícias</a>
+        <a href="../aula 4/creditos.html">Créditos</a>
+    </nav>
+
+    <article>
+        <section class="figura">
+            <h2>Tarefa com SVG</h2>
+            <svg width="300" height="300">
+                 <rect x="100" y="25" width="100" height="100" fill="blue"></rect>
+                 <circle r="25" cx="150" cy="150" fill="red">
+                    <animate attributeName="r" from="40" to="20" dur="0.5s" repeatCount="indefinite"></animate>
+                 </circle>
+                 <polygon points="150,280 100,200 200,200" fill="green"></polygon>
+            </svg>
+        </section>
+
+        <section class="audio">
+            <h2>Tarefa com audio</h2>
+            <p>Apenas um piano tocando</p>
+             <audio autoplay="autoplay" src="midia/788301__josefpres__piano-loops-180-octave-long-loop-120-bpm.wav" controls></audio>
+        </section>
+
+        <section class="video">
+             <h2>Tarefa com vídeos</h2>
+             <p>Publicidade :</p>
+             <video src="midia/ctrlplay.mp4" controls poster="midia/images.jpg"></video>
+        </section>
+    </article>
+
+    <footer>Página oficial pelo Guilherme Corrêa 2025-2027</footer>
+
+</body>
+</html>

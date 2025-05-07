@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid001</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container{
+            border: 5px solid cyan;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .item{
+            background-color: deeppink;
+        }
+
+        .item-2{
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+    </style>
+</head>
+<body>
+    <!--(div.item.item-$>{Item $})*12-->
+    <div class="container"> 
+        <div class="item item-1">Item 1</div>
+        <div class="item item-2">Item 2</div>
+        <div class="item item-3">Item 3</div>
+        <div class="item item-4">Item 4</div>
+        <div class="item item-5">Item 5</div>
+        <div class="item item-6">Item 6</div>
+        <div class="item item-7">Item 7</div>
+        <div class="item item-8">Item 8</div>
+        <div class="item item-9">Item 9</div>
+        <div class="item item-10">Item 10</div>
+        <div class="item item-11">Item 11</div>
+        <div class="item item-12">Item 12</div>
+    </div>    
+</body>
+</html>

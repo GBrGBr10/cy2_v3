@@ -1,0 +1,40 @@
+header = cabeça
+
+svg = ( use <> para completar o código )
+
+footer = informações sobre o site, usado para colocar créditos e direitos autorais
+
+width = largura
+
+height = altura
+
+article - section=class="nome"
+
+nav = diz
+
+<style> svg{border="30px solid black /} = criar um quadrado
+
+fill = prencher uma forma criada
+
+x= cima e baixo
+
+y= esquerda e direita
+
+cx= formas sem ponta cima e baixo
+
+cy= formas sem ponta esquerda e direita
+
+circle = circulo
+
+polygon = triangulo
+
+points = pontos pro triangulo
+
+<animate attributeName="r" from="40" to="20" dur="0.5s" repeatCount="indefinite"></animate> = animar uma forma ou alguma mídia.
+
+<audio> = adicionar áudio
+autoplay = tocar o áudio automático
+
+<video> = adicionar audio
+
+(Source é importante pra arquivos de mídia e formas).

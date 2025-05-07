@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Formulários</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        
+        }
+        body{
+            background-image: linear-gradient(to right, rgb(132, 216, 249), rgb(36, 34, 34));
+            width: 100vw;
+            height: 100vh;
+        }
+
+        main{
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        section{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 600px;
+            background-color: rgb(13, 195, 250);
+        }
+
+        section div#imagem{
+            height: 300px;
+            background-image: url(imagens/i347088.png);
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        section div#formulario {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(13, 195, 250);
+        }
+
+        a{
+            color: rgb(45, 82, 24);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+
+        .campo{
+            background-color: aquamarine;
+            margin: 15px 0px 15px 0px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        input#iemail{
+            height: 30px;
+        }
+
+        input#isenha{
+            height: 30px;
+        }
+
+        input#enviar{
+            height: 30px;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div id="imagem">
+
+            </div>
+
+            <div id="formulario">
+                <p>Bem vindo(a), faça login para fazer a amizade com o Clippy!
+                    <span class="material-symbols-outlined">
+                        attach_file_add
+                        </span>
+                </p>
+                
+                <form action="cadastro.php" method="POST">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            mail
+                            </span>
+                        <input type="email" name="email" id="iemail" required>
+                        <label for="iemail">Email</label>
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            lock
+                            </span>
+                        <input type="password" name="senha" id="isenha" required minlength="8">
+                        <label for="isenha">Senha</label>
+                    </div>
+
+                    <span class="material-symbols-outlined">
+                        check
+                        </span>
+                    <input id="enviar" type="submit" value="Enviar">
+                    
+                    <a href="">Esqueci minha conta, email ou senha.</a> 
+                    <span class="material-symbols-outlined">
+                        question_mark
+                        </span>
+
+                    <footer>@Microsoft Windows 1975-2025</footer>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

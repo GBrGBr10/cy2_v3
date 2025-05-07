@@ -1,0 +1,14 @@
+Estou aprendendo sobre CSS externo, interno e inline (evitar cssinline)
+
+O CSS trabalha bastante com tipos de style.
+
+font-size: cor; --> tamanho da fonte
+
+style.css --> arquivo para css externo
+
+header --> cabeçário para o body
+main --> cabeçário para o body
+
+div--> divisão
+
+CTRL + Shift + P = Abreviação com emmert = (div)*4 --> 4 DIVS criados

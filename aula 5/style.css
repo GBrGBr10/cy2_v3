@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+h1{
+    background-color:greenyellow;
+    color:blue;
+}
+h2{
+    background-color: violet;
+    color: black;
+}
+p{
+    background-color: yellow;
+    color: red;
+    font-size: 30px
+}
+a{
+    color: green;
+}

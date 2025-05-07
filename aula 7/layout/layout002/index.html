@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            height: 100vh;
+            background-color: black;
+            background-repeat: no repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                background-image: url(../imagens-20250312T180959Z-001/imagens/celular_back.jpg);
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 900px) {
+            body {
+                background-image: url(../imagens-20250312T180959Z-001/imagens/tablet_back.jpg);
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+            body {
+                background-image: url(../imagens-20250312T180959Z-001/imagens/tv_back.jpg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Query</h1>
+</body>
+</html>

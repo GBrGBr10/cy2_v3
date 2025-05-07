@@ -1,0 +1,49 @@
+@charset "UFT-8";
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-color: gray;
+    text-align: center;
+    padding:20px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: orange;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+.topnav a:hover {
+    background-color: orangered;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100vw;
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .column {
+        float: left;
+        padding: 30px;
+    }
+    .column.side {
+        width: 25%;
+    }
+
+    .column.middle {
+        width:50%
+    }
+}
