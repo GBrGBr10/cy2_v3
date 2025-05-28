@@ -1,15 +1,17 @@
-class Jogador{
+class Asteroide{
 
     //construção ou atributo
-    constructor() {
-        this.largura = 32 * 3;
-        this.altura = 32 * 3;
+    constructor(canvasLargura, canvasAltura) {
+        this.canvasLargura = canvasLargura;
+        this.canvasAltura = canvasAltura;
+        this.largura = 312*0.1;
+        this.altura = 336*0.1;
         this.velocidade = 10;
         this.posicao = {
-            x:500,
-            y:500
+            x:Math.floor(Math.random() * this.canvasLargura),
+            y:0
         }
-        this.NaveSprites = this.getImagem("src/assets/imagens/nave.png")
+        this.AsteroideSprites = this.getImagem("src/assets/imagens/asteroide.png")
         this.sx = 0;
         this.framesContador = 8;
     }
@@ -21,19 +23,15 @@ class Jogador{
         return imagem;
     }
 
-    moverEsquerda() {
-        this.posicao.x-= this.velocidade
-    }
-
-    moverDireita() {
-        this.posicao.x += this.velocidade
+    moverParaBaixo() {
+        this.posicao.y += this.velocidade;
     }
 
     desenhar(ctx) {
         ctx.drawImage(
-            this.NaveSprites,
+            this.AsteroideSprites,
             this.sx, 0,
-            32, 32,
+            312, 336,
             this.posicao.x, this.posicao.y,
             this.largura, this.altura
         )
@@ -43,16 +41,17 @@ class Jogador{
 
     update() {
         if(this.framesContador == 0) {
-            if(this.sx == 96) {
+            if(this.sx == 312) {
                 this.sx = 0;
             }
             else{
-                this.sx += 32;
+                this.sx += 312;
             }
             this.framesContador = 8;
         }
 
         this.framesContador--;
+        this.moverParaBaixo();
 
 
 
@@ -61,4 +60,4 @@ class Jogador{
 
 }
 
-export default Jogador;
+export default Asteroide;
