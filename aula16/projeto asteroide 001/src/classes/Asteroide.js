@@ -53,11 +53,11 @@ class Asteroide{
         this.framesContador--;
         this.moverParaBaixo();
 
-
-
+    
     }
-
-
+    atingiuBordaInferior() {
+        return this.posicao.y > this.canvasAltura;
+    }
 }
 
 export default Asteroide;

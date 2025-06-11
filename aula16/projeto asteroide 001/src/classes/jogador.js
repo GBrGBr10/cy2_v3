@@ -1,10 +1,12 @@
+import Projetil from "./Projetil.js";
+
 class Jogador{
 
     //construção ou atributo
     constructor() {
         this.largura = 32 * 3;
         this.altura = 32 * 3;
-        this.velocidade = 10;
+        this.velocidade = 15;
         this.posicao = {
             x:500,
             y:500
@@ -58,7 +60,17 @@ class Jogador{
 
     }
 
+    atirar(projeteis) {
+        const p = new Projetil(
+            {
+                x: this.posicao.x + this.largura/2,
+                y: this.posicao.y,
+            },
+            -10,
 
+        );
+        projeteis.push(p)
+    }
 }
 
 export default Jogador;
