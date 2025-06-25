@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><img src="../Imagens/titulo.png" alt=""></h1>
+        <div class="sub">
+        <p><b>Você encontrará melhores descontos!</b></p>
+        </div>
+    </header>
+
+    <nav>
+        <a class="infinf" href="index.html">Home</a>
+        <a class="infinf" href="suporte.html">Suporte</a>
+        <a class="infinf" href="informacoes.html">Informações</a>
+        <a class="infinf" href="creditos.html">Créditos</a>
+    </nav>
+
+    <article>
+        <h1>Qual seu email?</h1>
+        <input type="email" name="email" id="iemail">
+
+        <h1>Motivo do seu suporte?</h1>
+        <input id="enviar" type="button" value="Enviar">
+    </article>
+
+    <script>
+        function aceitarCookies() {
+            localStorage.setItem('cookiesAceitos', 'true');
+            document.getElementById('cookie-box').style.display = 'none';
+    }
+
+        window.onload = function() {
+            if (!localStorage.getItem('cookiesAceitos')) {
+                document.getElementById('cookie-box').style.display = 'block';
+        }
+    }
+    </script>
+    <footer>Página oficial pelo Guilherme Corrêa 2025 (24/06/25)</footer>
+</body>
+</html>

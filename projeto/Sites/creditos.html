@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créditos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;    
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="../Imagens/titulo.png" alt=""></h1>
+        <div class="sub">
+        <p><b>Você encontrará melhores descontos!</b></p>
+        </div>
+    </header>
+
+    <nav>
+        <a class="infinf" href="index.html">Home</a>
+        <a class="infinf" href="suporte.html">Suporte</a>
+        <a class="infinf" href="informacoes.html">Informações</a>
+        <a class="infinf" href="creditos.html">Créditos</a>
+    </nav>
+
+    <article>
+        <h1>Desenvolvimento Web</h1>
+        <p>Guilherme Corrêa de Oliveira</p>
+
+        <h1>Design Gráfico</h1>
+        <p>Guilherme Corrêa de Oliveira</p>
+
+        <h1>Redação e Conteúdo</h1>
+        <p>Guilherme Corrêa de Olveira</p>
+        <p>André Souza</p>
+        
+        <h1>Fotografia e Imagens</h1>
+        <p>Mercado Livre</p>
+        <p>Google Chrome</p>
+
+        <h1>Revisão</h1>
+        <p>Guilherme Corrêa de Oliveira</p>
+        <p>André Souza</p>
+
+        <h1>Hospedagem e Infraestrutura</h1>
+        <p>GitHub Pages</p>
+        <p>Ctrl+Play</p>
+
+        <h1>Licença</h1>
+        <p>MIT License</p>
+        <p>Mercado Livre</p>
+
+        <h1>Agradecimentos Especiais</h1>
+        <p>Rodrigo Santos de Oliveira</p>
+        <p>André Souza</p>
+        <p>Ctrl+Play</p>
+        <p>Você</p>
+    </article>
+
+    <script>
+        function aceitarCookies() {
+            localStorage.setItem('cookiesAceitos', 'true');
+            document.getElementById('cookie-box').style.display = 'none';
+    }
+
+        window.onload = function() {
+            if (!localStorage.getItem('cookiesAceitos')) {
+                document.getElementById('cookie-box').style.display = 'block';
+        }
+    }
+    </script>
+    <footer>Página oficial pelo Guilherme Corrêa 2025 (24/06/25)</footer>
+</body>
+</html>

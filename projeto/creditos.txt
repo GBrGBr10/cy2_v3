@@ -1,0 +1,32 @@
+CRÉDITOS
+
+Desenvolvimento Web
+Guilherme Corrêa de Oliveira
+
+Design Gráfico
+Guilherme Corrêa de Oliveira
+
+Redação e Conteúdo
+Guilherme Corrêa de Oliveira
+
+Fotografia e Imagens
+Mercado Livre
+Google Chrome
+
+Revisão
+Guilherme Corrêa de Oliveira
+André Souza
+Rodrigo Santos de Oliveira
+
+Hospedagem e Infraestrutura
+GitHub Pages
+Ctrl+Play
+
+Licença
+MIT License
+Mercado Livre
+
+Agradecimentos Especiais
+Rodrigo Santos de Oliveira
+André Souza
+Ctrl+Play

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><img src="../Imagens/titulo.png" alt=""></h1>
+        <div class="sub">
+        <p><b>Você encontrará melhores descontos!</b></p>
+        </div>
+    </header>
+
+    <nav>
+        <a class="infinf" href="index.html">Home</a>
+        <a class="infinf" href="suporte.html">Suporte</a>
+        <a class="infinf" href="informacoes.html">Informações</a>
+        <a class="infinf" href="creditos.html">Créditos</a>
+    </nav>
+
+    <article>
+        <h1>O que é sobre o nosso site?</h1>
+        <p>O nosso site serve para mostrar descontos e ofertas para pessoas que estão a procura de produtos baratos e recomendados por nós!</p>
+
+        <h1>Como posso confiar em vocês?</h1>
+        <p>Todas os produtos que mostramos são todas na fonte da famosa loja online : "Mercado Livre". Onde as ofertas e promoções vão e ainda por cima é a maior do Brasil!</p>
+
+        <h1>Qual é o objetivo de vocês?</h1>
+        <p>Nosso objetivo é evitar a metade do dinheiro ser gasto não só dos clientes, mas você também pode evitar e procurar produtos que você estava precisando, mudamos diariamente os produtos!</p>
+
+        <h1>Como vocês tiveram a ideia?</h1>
+        <p>Pensamos em ajudar as pessoas não só em nossa vida pessoal, mas também na internet financeira para quem procura compras baratas.</p>
+
+        <h1>Como você pode também ajudar?</h1>
+        <p>Você pode divulgar nosso site através das redes sociais como YouTube, Facebook, TikTok ou seus amigos!</p>
+
+    </article>
+
+    <script>
+        function aceitarCookies() {
+            localStorage.setItem('cookiesAceitos', 'true');
+            document.getElementById('cookie-box').style.display = 'none';
+    }
+
+        window.onload = function() {
+            if (!localStorage.getItem('cookiesAceitos')) {
+                document.getElementById('cookie-box').style.display = 'block';
+        }
+    }
+    </script>
+    <footer>Página oficial pelo Guilherme Corrêa 2025 (24/06/25)</footer>
+</body>
+</html>
